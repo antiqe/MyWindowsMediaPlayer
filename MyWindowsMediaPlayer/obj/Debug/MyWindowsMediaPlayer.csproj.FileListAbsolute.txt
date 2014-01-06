@@ -1,0 +1,13 @@
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\bin\Debug\MyWindowsMediaPlayer.exe.config
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\bin\Debug\MyWindowsMediaPlayer.exe
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\bin\Debug\MyWindowsMediaPlayer.pdb
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\MyWindowsMediaPlayer.csprojResolveAssemblyReference.cache
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\MainWindow.baml
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\MainWindow.g.cs
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\App.g.cs
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\MyWindowsMediaPlayer_MarkupCompile.cache
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\MyWindowsMediaPlayer.g.resources
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\MyWindowsMediaPlayer.Properties.Resources.resources
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\MyWindowsMediaPlayer.csproj.GenerateResource.Cache
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\MyWindowsMediaPlayer.exe
+C:\Users\GUIHO\Desktop\MyWindowsMediaPlayer\MyWindowsMediaPlayer\obj\Debug\MyWindowsMediaPlayer.pdb

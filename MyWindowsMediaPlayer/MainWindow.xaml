@@ -32,18 +32,18 @@
     <Grid HorizontalAlignment="Left" Width="800">
         <Grid x:Name="MainForm">
             <Image Name="Background" Source="MainWindows2.png" Stretch="Fill" Margin="0,0,-99,0" />
-            <Slider Opacity="0.2" HorizontalAlignment="Left" Margin="636,531,0,0" VerticalAlignment="Top" Width="122" IsEnabled="False"/>
+            <Slider Opacity="0.2" HorizontalAlignment="Left" Margin="636,531,0,0" VerticalAlignment="Top" Width="122" IsEnabled="False" ValueChanged="Slider_ValueChanged"/>
             <MediaElement x:Name="MediaPlayer" Height="427" Margin="32,53,30,0" VerticalAlignment="Top" Width="Auto"/>
-            <Button IsEnabled="False" Opacity="0.2" Name="buttonPlayPause" Margin="317,514,416,30" Style="{StaticResource MyButtonStyle}">
+            <Button IsEnabled="True" Opacity="0.2" Name="buttonPlayPause" Click="buttonPlayPause_Click" Margin="317,514,416,30" Style="{StaticResource MyButtonStyle}">
                 <Image HorizontalAlignment="Center" Height="56" VerticalAlignment="Center" Width="67" Source="Play.png"/>
             </Button>
-            <Button IsEnabled="False" Opacity="0.2" Name="buttonStop" Margin="370,514,363,30" Style="{StaticResource MyButtonStyle}">
+            <Button IsEnabled="True" Opacity="0.2" Name="buttonStop" Click="buttonStop_Click" Margin="370,514,363,30" Style="{StaticResource MyButtonStyle}">
                 <Image HorizontalAlignment="Center" Height="47" VerticalAlignment="Center" Width="57" Source="Stop.png"/>
             </Button>
-            <Button IsEnabled="False" Opacity="0.2" Name="buttonRewind" Margin="257,514,476,30" Style="{StaticResource MyButtonStyle}">
+            <Button IsEnabled="True" Opacity="0.2" Name="buttonRewind" Click="buttonRewind_Click" Margin="257,514,476,30" Style="{StaticResource MyButtonStyle}">
                 <Image HorizontalAlignment="Center" Height="47" VerticalAlignment="Center" Width="57" Source="SpeedLeft.png"/>
             </Button>
-            <Button IsEnabled="False" Opacity="0.2" Name="buttonFastForward" Margin="427,514,306,30" Style="{StaticResource MyButtonStyle}">
+            <Button IsEnabled="True" Opacity="0.2" Name="buttonFastForward" Click="buttonFastForward_Click" Margin="427,514,306,30" Style="{StaticResource MyButtonStyle}">
                 <Image HorizontalAlignment="Center" Height="47" VerticalAlignment="Center" Width="57" Source="SpeedRight.png"/>
             </Button>
             <Button Name="buttonOpen" Click="buttonOpen_Click" Margin="32,26,693,0" VerticalAlignment="Top" Width="75" Style="{StaticResource MyButtonStyle}">

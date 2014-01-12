@@ -96,5 +96,32 @@ namespace MyWindowsMediaPlayer
                      
             }
         }
+
+        private void buttonPlayPause_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void buttonStop_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonRewind_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonFastForward_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+        }
+
+
     }
 }

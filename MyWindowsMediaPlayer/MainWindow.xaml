@@ -32,7 +32,7 @@
     <Grid HorizontalAlignment="Left" Width="800">
         <Grid x:Name="MainForm">
             <Image Name="Background" Source="MainWindows2.png" Stretch="Fill" Margin="0,0,-99,0" />
-            <Slider Opacity="0.2" HorizontalAlignment="Left" Margin="636,531,0,0" VerticalAlignment="Top" Width="122" IsEnabled="False" ValueChanged="Slider_ValueChanged"/>
+            <Slider Opacity="0.2" HorizontalAlignment="Left" Margin="636,531,0,0" VerticalAlignment="Top" Width="122" IsEnabled="True" ValueChanged="Slider_ValueChanged"/>
             <MediaElement x:Name="MediaPlayer" Height="427" Margin="32,53,30,0" VerticalAlignment="Top" Width="Auto"/>
             <Button IsEnabled="True" Opacity="0.2" Name="buttonPlayPause" Click="buttonPlayPause_Click" Margin="317,514,416,30" Style="{StaticResource MyButtonStyle}">
                 <Image HorizontalAlignment="Center" Height="56" VerticalAlignment="Center" Width="67" Source="Play.png"/>

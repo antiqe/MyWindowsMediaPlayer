@@ -20,9 +20,12 @@ namespace MyWindowsMediaPlayer
     /// </summary>
     public partial class MainWindow : Window
     {
+        static int currentState = -1;
+
         public MainWindow()
         {
             InitializeComponent();
+            MediaPlayer.Volume = 0.0;
         }
 
         protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
@@ -40,12 +43,16 @@ namespace MyWindowsMediaPlayer
             if (result == true)
             {
                 MediaPlayer.Source = new Uri(dlg.FileName);
+                MediaPlayer.LoadedBehavior = MediaState.Manual;
                 MediaPlayer.Height = 452;
+                MediaPlayer.SpeedRatio = 1.0;
+                MediaPlayer.Play();
                 gridLibrary.Visibility = Visibility.Hidden;
                 barLibrary.Visibility = Visibility.Hidden;
                 treeLibrary.Visibility = Visibility.Hidden;
                 MediaPlayer.Visibility = Visibility.Visible;
                 buttonUnfoldPlaylist.Visibility = Visibility.Visible;
+                currentState = 0;
             }
         }
 
@@ -93,35 +100,51 @@ namespace MyWindowsMediaPlayer
             {
                 case "itemPlaylist":
                 break;
-                     
             }
         }
 
         private void buttonPlayPause_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (MediaPlayer.SpeedRatio != 1.0)
+                MediaPlayer.SpeedRatio = 1.0;
+            else if (currentState == 0)
+            {
+                MediaPlayer.Pause();
+                currentState = 1;
+            }
+            else if (currentState == 1)
+            {
+                MediaPlayer.Play();
+                currentState = 0;
+                MediaPlayer.SpeedRatio = 1.0;
+            }
         }
 
         private void buttonStop_Click(object sender, RoutedEventArgs e)
         {
-
+            if (currentState >= 0)
+            {
+                MediaPlayer.Stop();
+                MediaPlayer.Visibility = Visibility.Hidden;
+                currentState = -1;
+            }
         }
 
         private void buttonRewind_Click(object sender, RoutedEventArgs e)
         {
-
+            if (currentState == 0)
+                MediaPlayer.SpeedRatio /= 2.0;
         }
 
         private void buttonFastForward_Click(object sender, RoutedEventArgs e)
         {
-
+            if (currentState == 0)
+                MediaPlayer.SpeedRatio *= 2.0;
         }
 
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-
+            MediaPlayer.Volume = e.NewValue;
         }
-
-
     }
 }
